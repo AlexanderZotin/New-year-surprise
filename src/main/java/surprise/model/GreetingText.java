@@ -11,6 +11,8 @@ import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import lombok.NonNull;
+
 import static java.lang.String.format;
 
 public class GreetingText implements Animatable {
@@ -41,7 +43,7 @@ public class GreetingText implements Animatable {
     }
 
     @Override
-    public void start(Runnable repaintAction) {
+    public void start(@NonNull Runnable repaintAction) {
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {

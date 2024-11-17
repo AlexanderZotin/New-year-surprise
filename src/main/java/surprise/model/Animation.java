@@ -4,19 +4,15 @@ import java.awt.Graphics;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import lombok.NonNull;
+
 public class Animation implements Animatable {
-    private final NewYearTree newYearTree;
-    private final StarScy starScy;
-    private final GreetingText greetingText;
-
-    public Animation() {
-        newYearTree = new NewYearTree();
-        starScy = new StarScy();
-        greetingText = new GreetingText();
-    }
-
+    private final NewYearTree newYearTree = new NewYearTree();
+    private final StarScy starScy = new StarScy();
+    private final GreetingText greetingText  = new GreetingText();
+    
     @Override
-    public void start(Runnable repaintAction) {
+    public void start(@NonNull Runnable repaintAction) {
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {

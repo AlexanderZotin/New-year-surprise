@@ -30,7 +30,7 @@ public class StarScy implements Paintable {
     }
 
     public static void regenerateStar(int[][] star) {
-        Random random = new Random();
+        var random = new Random();
         for (int i = 0; i < star.length; i++) {
             int summand = (i == 0) ? random.nextInt(378) : random.nextInt(320);
             for (int j = 0; j < star[i].length; j++) {

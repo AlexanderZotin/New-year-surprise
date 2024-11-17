@@ -41,11 +41,11 @@ public class NewYearTree implements Paintable {
     private void paintTree(Graphics g) {
         final Color BROWN = new Color(128, 64, 0);
         g.setColor(BROWN);
-        g.fillRoundRect(180, 280, 50, 60, 7, 7); //ќтрисовка ствола
+        g.fillRoundRect(180, 280, 50, 60, 7, 7); //отрисовка ствола
 
         final Color DARK_GREEN = new Color(0, 140, 0);
         g.setColor(DARK_GREEN);
-        g.fillPolygon(new int[]{200, 100, 300}, new int[]{50, 300, 300}, 3); //ќтрисовка листвы
+        g.fillPolygon(new int[]{200, 100, 300}, new int[]{50, 300, 300}, 3); //отрисовка листвы
     }
 
     private void paintStar(Graphics g) {

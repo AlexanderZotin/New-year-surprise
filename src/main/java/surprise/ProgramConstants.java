@@ -2,14 +2,10 @@ package surprise;
 
 import java.awt.Color;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import static java.util.AbstractMap.SimpleImmutableEntry;
-import static java.lang.String.format;
 
 public final class ProgramConstants {
     private ProgramConstants() {
-        throw new AssertionError("Не должно быть экземпляров класса ProgramConstants!");
+        throw new AssertionError("No instances of class ProgramConstants for you!");
     }
 
     public static final List<Color> colors = List.of(
